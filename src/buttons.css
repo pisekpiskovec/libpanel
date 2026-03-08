@@ -1,0 +1,88 @@
+@import url("pallete.css");
+
+a.button,
+button {
+  background-color: light-dark(var(--lightB), var(--darkD));
+  padding: 11px;
+  border-radius: 12px;
+  color: light-dark(var(--darkE), var(--lightA));
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+a.button:hover,
+a.light:hover,
+input[type="submit"].light:hover,
+button:hover,
+button.light:hover {
+  background-color: light-dark(var(--lightD), var(--darkB));
+}
+
+a.button:active,
+a.light:active,
+input[type="submit"].light:active,
+button:active,
+button.light:active {
+  background-color: var(--brand);
+  color: var(--lightA);
+}
+
+a.light,
+input[type="submit"].light,
+button.light {
+  background-color: light-dark(var(--lightC), var(--darkC));
+  color: light-dark(var(--darkE), var(--lightA));
+}
+
+input[type="submit"] {
+  padding: 11px;
+  border-radius: 12px;
+  background-color: var(--brand);
+  color: var(--lightA);
+  text-decoration: none;
+  border: none;
+}
+
+.imgButton {
+  display: inline-flex;
+}
+
+a.link {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--purpleA);
+}
+
+a.worded_link {
+  text-decoration: none;
+  color: var(--purpleA);
+}
+
+a.link:hover,
+a.worded_link:hover,
+a.masked:hover,
+.cursor_hand:hover {
+  color: var(--purpleB);
+}
+
+a.link:active,
+a.worded_link:active,
+a.masked:active,
+.cursor_hand:active {
+  color: light-dark(var(--darkE), var(--lightA));
+}
+
+a.destructive,
+button.destructive {
+  color: var(--redC);
+}
+
+a.masked {
+  text-decoration: none;
+}
+
+.cursor_hand {
+  cursor: pointer;
+}
